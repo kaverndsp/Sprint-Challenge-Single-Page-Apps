@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
+import {Link} from "react-router-dom";
 
 export default function CharacterList() {
   const [character, setCharacter] = useState([]);
@@ -20,8 +21,8 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-     
-        {character.map(char => {
+     <Link to={"/"}> Home</Link>
+          {character.map(char => {
           return(
             
               <CharacterCard key={char.id} char={char} />
