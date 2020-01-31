@@ -36,6 +36,7 @@ const handleInputChange = event => {
 
 
     <Link to="/">Home</Link>
+    
     </form>
 
     {data.map((char => {
