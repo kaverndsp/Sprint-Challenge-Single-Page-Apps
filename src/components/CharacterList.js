@@ -3,15 +3,20 @@ import axios from "axios";
 import CharacterCard from "./CharacterCard";
 import {Link} from "react-router-dom";
 
-export default function CharacterList() {
-  const [character, setCharacter] = useState([]);
 
+export default function CharacterList() {
+  const [characters, setCharacters] = useState([]);
+ 
+
+
+  
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
     axios.get('https://rickandmortyapi.com/api/character/')
     .then(response => {
       console.log(response.data.results)
-      setCharacter(response.data.results)
+      setCharacters(response.data.results)
+     
     })
     .catch(error => {
       console.log("The data could not be returned", error)
@@ -22,10 +27,15 @@ export default function CharacterList() {
   return (
     <section className="character-list">
      <Link to={"/"}> Home</Link>
-          {character.map(char => {
+     <Link to="/Search">Search</Link>
+          {characters.map(char => {
           return(
             
-              <CharacterCard key={char.id} char={char} />
+              <CharacterCard  key={char.id}
+              name={char.name}
+              species={char.species}
+              gender={char.gender}
+              image={char.image} />
             
           )
         })}
