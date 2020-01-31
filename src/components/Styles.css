@@ -1,0 +1,13 @@
+.buffer{
+    color:white;
+}
+
+.new{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin:10% 0%;
+    
+}
+
