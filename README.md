@@ -41,7 +41,7 @@ Follow these steps to set up and work on your project:
 - [✓]  Push commits: `git push origin <firstName-lastName>`.
 - [✓]  **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
 - [✓]  **RUN** `yarn install` or `npm install` to retrieve the client-side dependencies.
-- [ ]  **RUN** `yarn start` or `npm start` to fire up your React application.
+- [✓]  **RUN** `yarn start` or `npm start` to fire up your React application.
 
 ### Exceeded rate limits?
 
