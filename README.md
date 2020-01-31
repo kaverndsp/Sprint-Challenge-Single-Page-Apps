@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: As opposed to Server-Side routing its biggest leaps are in performance. Because less data needs to be processed it gives a smoother and quicker experince to the user. A downside to that though is initinally it will take longer to load since it has to load the whole application first.
 
 ## Project Set Up
 
@@ -74,8 +74,8 @@ _Add a Router to this application using [React Router](https://reacttraining.com
 
 _Add 'Search by Name' feature._
 
-- [ ]  Add the `<SearchForm />` component (see `./components/SearchForm.js`).
-- [ ]  Create a search form that will filter through the data displayed in the character list.
+- [✓]  Add the `<SearchForm />` component (see `./components/SearchForm.js`).
+- [✓]  Create a search form that will filter through the data displayed in the character list.
 
 ### **Required best practices:**
 
